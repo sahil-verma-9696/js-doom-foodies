@@ -82,3 +82,5 @@ export class Supplier {
     return `https://www.themealdb.com/images/ingredients/${formatted}-${size}.png`;
   }
 }
+
+export const supplier = new Supplier("https://www.themealdb.com");

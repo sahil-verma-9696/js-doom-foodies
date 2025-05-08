@@ -109,6 +109,7 @@
           object-fit: cover;
           margin: auto;
           border-radius: 1rem 0;
+          //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
           &:nth-child(3) {
             transform: translateX(50%);
             border-radius: 0 1rem;
@@ -117,41 +118,77 @@
       }
     }
 
-    .categories-section {
-      padding: 1rem 5vw;
+    .products-section {
+      padding: 2rem;
+      background-color: #f9f9f9;
 
-      .categories {
-        .category-card {
-          .img-wrapper {
-            margin: 1rem 0;
-            position: relative;
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-            border-radius: 1rem;
-            h3 {
-              position: absolute;
-              top: 0;
-              left: 0;
-              font-size: 1.8rem;
-              background-color: white;
-              padding: 0.2rem 1rem;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-              border-radius: 1rem 0;
-              transform: translateX(-10px);
-              font-style: italic;
-              color: rgba(0, 0, 0, 0.8);
-              font-weight: 600;
-            }
-          }
-          a {
-            display: block;
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        justify-content: center;
+      }
+
+      .product-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+
+        .img-wrapper {
+          width: 100%;
+          position: relative;
+
+          img {
             width: 100%;
-            text-align: center;
-            background-color: rebeccapurple;
-            color: white;
-            font-weight: bold;
-            padding: 0.5rem 1.5rem;
-            border-radius: 0.5rem 0;
-            margin: 0.5rem auto;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+
+        h3 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 1rem 0 0.5rem;
+          font-size: 1.2rem;
+          color: #444;
+          text-align: center;
+          background-color: white;
+          padding: 0.3rem 0;
+          padding-right: 1rem;
+          border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        .addToCart {
+          background-color: #3B82F6;
+          color: white;
+          border: none;
+          padding: 0.6rem 1.2rem;
+          border-radius: 8px;
+          margin-top: 1rem;
+          cursor: pointer;
+          font-size: 0.95rem;
+          transition: background-color 0.2s ease;
+          font-weight: bold;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+          &:hover {
+            background-color: #2563EB;
           }
         }
       }
