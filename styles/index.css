@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(/assets/fonts/67494711d21558f07d259e65_Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "dharma";
+  src: url(/assets/fonts/DharmaGothicE-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.text-white {
+  color: white;
+}
+
+#root main header {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5vw;
+}
+#root main header h1 {
+  color: white;
+}
+#root main header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#root main header .header-right nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#root main header .header-right nav a {
+  color: white;
+}
+#root main header .header-right button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+#root main header .header-right button i {
+  font-size: 1.2rem;
+  color: white;
+}
+#root main header .header-right button span {
+  color: white;
+  position: absolute;
+  padding: 0.3rem;
+  font-weight: bolder;
+  border-radius: 50%;
+  left: 55%;
+  transform: translateX(-50%);
+  top: -100%;
+}
+#root main .hero-section {
+  padding: 1rem 5vw;
+  background-color: rebeccapurple;
+}
+#root main .hero-section .search {
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+#root main .hero-section .search input {
+  flex: 1;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+}
+#root main .hero-section .search button {
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem;
+}
+#root main .hero-section h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+}
+#root main .hero-section h2 em {
+  color: white;
+}
+#root main .hero-section .featured {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+#root main .hero-section .featured img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  border-radius: 1rem 0;
+}
+#root main .hero-section .featured img:nth-child(3) {
+  transform: translateX(50%);
+  border-radius: 0 1rem;
+}
+#root main .categories-section {
+  padding: 1rem 5vw;
+}
+#root main .categories-section .categories .category-card .img-wrapper {
+  margin: 1rem 0;
+  position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+}
+#root main .categories-section .categories .category-card .img-wrapper h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.8rem;
+  background-color: white;
+  padding: 0.2rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 1rem 0;
+  transform: translateX(-10%);
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+#root main .categories-section .categories .category-card a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rebeccapurple;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem 0;
+  margin: 0.5rem auto;
+}
+#root main footer {
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 5vw;
+  gap: 1rem;
+}
+#root main footer section ul {
+  padding: 0.5rem 0;
+}
+#root main footer section ul li {
+  color: white;
+}
+#root main footer section ul li i {
+  color: white;
+  font-size: 1.1rem;
+}
+#root main footer .about p {
+  font-size: 0.8rem;
+}
+#root main footer .social ul {
+  display: flex;
+  gap: 1rem;
+}/*# sourceMappingURL=index.css.map */
